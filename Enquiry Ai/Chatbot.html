@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Enquiry Chatbot</title>
+  <link rel="stylesheet" href="chatbot.css">
+  
+</head>
+<body>
+
+<!-- Floating Button -->
+<div id="chat-icon" >
+    <img src="lo.png" alt="" style="width: 75px; height:55px;" srcset="">
+</div>
+
+<!-- Chat Window -->
+<div id="chat-box">
+  <div id="chat-header">
+    🎓 College Enquiry
+    <span id="chat-close">✖</span>
+  </div>
+
+  <div id="chat-body">
+    <div class="bot-msg">Hello! Main aapki madad ke liye hoon 🙂</div>
+  </div>
+
+  <div id="chat-footer">
+    <input type="text" placeholder="Yahan likhiye..." />
+    <button>Send</button>
+  </div>
+</div>
+
+
+ <script>
+document.getElementById("chat-icon").onclick = function(){
+ var chatDp = document.getElementById("chat-box").style.display = "flex";
+ if(chatDp=true){
+      document.getElementById("chat-icon").style.display = "none";
+
+
+ }
+}
+document.getElementById("chat-close").onclick = function(){
+ var chatbox = document.getElementById("chat-box").style.display = "none";
+  if(chatbox=true){
+      document.getElementById("chat-icon").style.display = "flex";
+}
+}
+</script>
+<script src="chatbot.js"></script>
+</body>
+</html>
